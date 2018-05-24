@@ -39,7 +39,7 @@ yarn add @simbo/stylus-mixins
 ## Mixins
 
 
-### `mdShadow($depth = 2, $multiplier = 1, $inset = false)`
+### `mdShadow($depth = 2, $alphaMultiplier = 1, $inset = false)`
 
 Material design shadows with umbra, penumbra and ambient shadow
 

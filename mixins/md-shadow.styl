@@ -2,7 +2,7 @@
  * Material design shadows
  */
 
-mdShadow($depth = 2, $multiplier = 1, $inset = false)
+mdShadow($depth = 2, $alphaMultiplier = 1, $inset = false)
   $shadow = {
     opacity: {
       umbra:    .2,
@@ -40,9 +40,9 @@ mdShadow($depth = 2, $multiplier = 1, $inset = false)
     box-shadow: none
   else
     $depth = max(1, min(length($shadow.depths), $depth))
-    $shadowUmbra = $shadow.depths['dp' + $depth][0] rgba(0, 0, 0, ($shadow.opacity.umbra * $multiplier))
-    $shadowPenumbra = $shadow.depths['dp' + $depth][1] rgba(0, 0, 0, ($shadow.opacity.penumbra * $multiplier))
-    $shadowAmbient = $shadow.depths['dp' + $depth][2] rgba(0, 0, 0, ($shadow.opacity.ambient * $multiplier))
+    $shadowUmbra = $shadow.depths['dp' + $depth][0] rgba(0, 0, 0, ($shadow.opacity.umbra * $alphaMultiplier))
+    $shadowPenumbra = $shadow.depths['dp' + $depth][1] rgba(0, 0, 0, ($shadow.opacity.penumbra * $alphaMultiplier))
+    $shadowAmbient = $shadow.depths['dp' + $depth][2] rgba(0, 0, 0, ($shadow.opacity.ambient * $alphaMultiplier))
     if ($inset)
       box-shadow: $shadowUmbra inset, $shadowPenumbra inset, $shadowAmbient inset
     else
