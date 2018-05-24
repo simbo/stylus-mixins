@@ -1,0 +1,36 @@
+{
+  "name": "@simbo/stylus-mixins",
+  "version": "0.1.0",
+  "description": "A personal collection of Stylus mixins.",
+  "author": "Simon Lepel <simbo@simbo.de> (http://simbo.de/)",
+  "license": "MIT",
+  "keywords": [
+    "stylus",
+    "mixin",
+    "collection",
+    "css"
+  ],
+  "homepage": "https://github.com/simbo/stylus-mixins#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simbo/stylus-mixins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simbo/stylus-mixins/issues"
+  },
+  "scripts": {
+    "test": "echo \"No tests specified. Skipping...\" && exit 0"
+  },
+  "main": "index.styl",
+  "files": [
+    "mixins/",
+    "index.styl",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "clean-css-cli": "^4.1.11",
+    "node-sass": "^4.9.0",
+    "stylus": "^0.54.5"
+  }
+}

@@ -1,0 +1,16 @@
+/**
+ * Create a peudo element expander to maintain aspect ratio
+ */
+
+ratioExpanderPadding($ratio = 1)
+  padding-bottom: unit((100 / $ratio), '%')
+
+ratioExpander($ratio = 1)
+  position: relative
+
+  &::before
+    ratioExpanderPadding($ratio)
+    content: ''
+    display: block
+    width: 100%
+    height: 0
