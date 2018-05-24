@@ -53,7 +53,7 @@ Creates a peudo element expander to maintain aspect ratio
 [./mixins/ratio-expander](./mixins/ratio-expander.styl)
 
 
-### `textEllipsis()``
+### `textEllipsis()`
 
 Ellipsis overflow for single-line text
 
