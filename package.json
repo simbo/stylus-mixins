@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/simbo/stylus-mixins/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"No tests specified. Skipping...\" && exit 0"
   },
