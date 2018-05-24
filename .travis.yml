@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '8.11'
+env:
+  global:
+    secure: aynLNbY0TZvEaByx7kdFsRS8h1SfgP7jKn+xlfhuj6A+JV1Y5ZTir9DujAmLOiHTD5vipnPK6DBAKrwYFKz/xeuC86BOpLjWbGZXuXdgkvJT+KgEc/PXUHJWtktizUtB8UNCPmtYDxNDPyLRINTi7v+LJYhAnI6xc8oc0spjx8y8nKYKDzdtzNQyhE/+boG8voggfeCIe+cPeIOR9IsY4Vl/vQtxldoryeB8tzlTqdI227mecJI/XC4RKDdz5zMRvaWsBydxxgS0ssTVUqQJzDkVHEUS116Eu/hXRAZzQ0kC82hugqw863Z1m7vtk+jRy7sQ0sOZxd1/fhynqirM9ObEICX8ncfQAW47pFZCcqVPsaDBKkJtsfLV9l1w4M2HGEnUTKHnfsPDvneVW4TOgPenFYL0q7YxhQj8beQYIgaxd+Fl4WxmIjE55Ub14ycMieDJQH7t4K94rJVlnDQducq1rej0+AFuC5KoVpB14K/HtdstbfxlHpSsFxRC+N2ZcXL7Ee8snY/CnGFDDXEnm1ep96ECl9Nj0C/Jl+MQ6Gj0Qup5H83JacTJZ9ah5XsqvjMRSmqYsuae99sQhSueSiF102c+KIDYFOENWHIRmfdBK1gF3oX2gxkOIv3T3s4EcH4lRFsEpc1G98Y3UuCHxR6bYSP7kApH4bkE7oZ0RJQ=
+deploy:
+  provider: npm
+  email: simbo@simbo.de
+  api_key: "${NPM_API_KEY}"
+  on:
+    tags: true
+    node: '8.11'
+  skip_cleanup: true
